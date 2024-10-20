@@ -1,0 +1,104 @@
+$container-width: 1200px; 
+$base-font-size: 20px; 
+$main-color: #5222D0;
+$secondary-color: #EC615B;
+$text-color: #000;
+$background-color: #fff;
+$button-text-color: #fff;
+$button-hover-color: darken($secondary-color, 30%);
+
+//breakpoints
+$tablets: 768px;
+$phones: 320px;
+
+//normalize
+@import url('./reset.css');
+@import url('./normalize.css');
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'Intro';
+  src: url('../fonts/IntroBoldAlt.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+//blocks
+@import './blocks/header';
+@import './blocks/footer';
+@import './blocks/vr';
+@import './blocks/possibilities';
+
+
+html {
+  font-size: $base-font-size;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: normal;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto; // Шапка, основной контент и футер
+  min-height: 100vh; // Минимальная высота экрана
+  margin: 0 auto;
+  max-width: $container-width;
+  background-color: $background-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+h6 {
+  font-family: "Intro";
+  margin-top: 0;
+  font-weight: normal;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+image {
+  display: block;
+  min-width: 100%;
+}

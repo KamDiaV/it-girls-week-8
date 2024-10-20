@@ -1,0 +1,134 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    display: contents; 
+  }
+
+  &__text {
+    max-width: 100%;
+    padding-right: 10px;
+
+    .hero__title {
+      font-size: 60px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .hero__description {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .hero__buy-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $main-color;
+      color: $button-text-color;
+      border-radius: 100px;
+      font-family: 'Intro';
+      font-size: 35px;
+      text-transform: uppercase;
+      border: none;
+      padding-top: 4px;
+      width: 270px;
+      height: 80px;
+      margin-bottom: 146px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $button-hover-color;
+      }
+
+      img {
+        margin-left: 16px; 
+        height: auto;
+        width: 41px;
+        margin-bottom: 9px;
+      }
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr; 
+    text-align: center; 
+
+    &__text {
+      padding-right: 0;
+
+      .hero__title {
+        font-size: 45px; 
+      }
+
+      .hero__description {
+        font-size: 18px; 
+      }
+
+      .hero__buy-button {
+        font-size: 28px; 
+        width: 220px; 
+        height: 70px; 
+        margin: 0 auto;
+      }
+    }
+
+    &__image {
+      img {
+        width: 90%; 
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .hero {
+    grid-template-columns: 1fr; 
+    gap: 10px;
+
+    &__text {
+      .hero__title {
+        font-size: 35px; 
+      }
+
+      .hero__description {
+        font-size: 16px; 
+      }
+
+      .hero__buy-button {
+        font-size: 22px; 
+        width: 180px; 
+        height: 60px; 
+      }
+
+      img {
+        margin-left: 8px; 
+        width: 24px; 
+      }
+    }
+
+    &__image {
+      img {
+        width: 100%; 
+      }
+    }
+  }
+}
+

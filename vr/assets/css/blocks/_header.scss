@@ -1,0 +1,39 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 70px;
+
+  &__logo {
+    width: 200px;
+    height: 40px;
+  }
+
+  &__cart-button {
+    display: flex;
+    align-items: baseline;
+    background-color: $main-color; 
+    color: $button-text-color;
+    font-family: 'Intro';
+    font-size: 13px;
+    text-transform: uppercase;
+    width: auto;
+    height: 38px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+
+    img {
+      margin-left: 5px; 
+      height: 14px;
+      width: auto;
+    }
+  }
+}
