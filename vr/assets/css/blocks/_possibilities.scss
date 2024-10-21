@@ -19,10 +19,11 @@
     margin-bottom: 25px;
     width: calc(33.333% - 10px);
     text-align: center;
+    max-width: 365px;
 
     .offers__img {
-      width: auto;
-      height: 278px;
+      width: 100%;
+      height: auto;
       margin-bottom: 23px;
     }
 
