@@ -1,4 +1,5 @@
 .offers {
+  padding: 10px;
 
   &__title {
     text-align: left;
@@ -15,14 +16,14 @@
   }
 
   &__item {
-    padding: 20px;
     margin-bottom: 25px;
     width: calc(33.333% - 10px);
-    text-align: center;
+    text-align: left;
+    padding-top: 20px;
 
     .offers__img {
       width: 100%;
-      height: auto;
+      height: 270px;
       margin-bottom: 23px;
       max-width: 365px;
     }
@@ -52,6 +53,7 @@
     justify-content: start;
     align-items: start;
     padding-left: 18px;
+    padding-right: 20px;
 
     .newsletter__form {
       display: flex;
@@ -84,7 +86,7 @@
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: $button-hover-color;
+        background-color: darken($main-color, 30%);
       }
     }
   }
@@ -124,7 +126,7 @@
 
     &__item--newsletter {
       align-items: left; 
-      padding-left: 10; 
+      padding-left: 10px; 
 
       .newsletter__form {
         align-items: left; 
