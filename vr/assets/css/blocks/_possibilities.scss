@@ -19,7 +19,6 @@
     margin-bottom: 25px;
     width: calc(33.333% - 10px);
     text-align: center;
-    max-width: 380px;
 
     .offers__img {
       width: 100%;
@@ -105,7 +104,8 @@
 
     &__item {
       width: 80%; 
-      margin-bottom: 30px; 
+      margin-bottom: 30px;
+      max-width: 365px; 
 
       .offers__img {
         height: auto; 
