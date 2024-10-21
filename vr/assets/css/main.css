@@ -223,12 +223,13 @@
   margin-bottom: 25px;
   width: calc(33.333% - 10px);
   text-align: center;
-  max-width: 365px;
+  max-width: 380px;
 }
 .offers__item .offers__img {
   width: 100%;
   height: auto;
   margin-bottom: 23px;
+  max-width: 365px;
 }
 .offers__item .offers__subtitle {
   font-family: "Intro";
@@ -298,7 +299,7 @@
     margin-bottom: 30px;
   }
   .offers__item .offers__img {
-    height: 220px;
+    height: auto;
   }
   .offers__item .offers__subtitle {
     font-size: 24px;
@@ -330,7 +331,7 @@
     margin-bottom: 20px;
   }
   .offers__item .offers__img {
-    height: 180px;
+    height: auto;
   }
   .offers__item .offers__subtitle {
     font-size: 20px;
